@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Varela Round', sans-serif;
+}
+:root {
+  --accent-secondary-color: #ff4405;
+  --accent-1: #ff4405;
+  --accent-2: #ff4405;
+}
+h1 {
+  font-style: italic;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition:1s;
+}
+
+h2 {
+  font-style: italic;
+  padding-left: 10vmax;
+  padding-right: 10vmax;
+  transition:1s;
+}
+
+p {
+  padding-left: 10vmax;
+  padding-right: 10vmax;
+  transition:1s;
+}
+
+#author {
+  padding-left: 30vmax;
+  font-size: 10px;
+  transition:1s;
+}
+
+#DIVider {
+  height: 5px;
+  width: 90vmax;
+  background-color: var(--accent-secondary-color);
+  border-radius: 100px;
+  box-shadow: var(--accent-secondary-color) 0px 1px 15px;
+  transition:1s;
+}
+#h {
+  animation: ae 1s;
+}
+@keyframes ae{
+  0% {
+   transform:scale(0.9); 
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.9);
+  }
+}
+a {
+	text-decoration: none;
+	color: var(--accent-1) !important;
+}
+
+a:not(.no-underline),
+a>h1,
+a>h2,
+a>h3 {
+	display: inline;
+	text-decoration: none;
+	/* font-family: Supreme Bold, 'sans-serif'; */
+	border-radius: 0px;
+	background-image: linear-gradient(var(--accent-1), var(--accent-1));
+	background:
+		linear-gradient(to right, rgba(256 256 256 / 0%), rgba(256 256 256 / 0%)),
+		linear-gradient(to right, var(--accent-1), var(--accent-1));
+	background-size: 100% 0.1em, 0 0.1em;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: 400ms;
+}
+
+a:hover,
+a:hover>* {
+	color: var(--accent-1);
+	background-size: 0 0.1em, 100% 0.1em;
+}
